@@ -1,9 +1,3 @@
-[![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
-
-# Straight Through Estimator
-Implementation of STE in pytorch
-
-```python
 import torch 
 import torch.nn as nn
 
@@ -22,19 +16,4 @@ class STE(nn.Module):
     def forward(self, input):
         return STEFunc.apply(input)
     
-
-# random input
-x = torch.randn(1, 3, 32, 32)
-
-# STE
-ste = STE()
-
-# forward
-y = ste(x)
-
-print(y)
-
-```
-
-# Citations
 
